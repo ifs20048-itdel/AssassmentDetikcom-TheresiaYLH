@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body style="background-color: #F4FBFF;">
+
+    <nav class="navbar navbar-custom fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="./src/assets/logo.png" alt="logo" width="192px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#mechanism">Mechanism</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#latestUpdate">Latest Update</a>
+                </li>   
+                <a href="regis.html"><button  class="btn btn-primary justify-content-center align-items-center" 
+                    style="border-radius: 100px;
+                    background-color: white;
+                    color: rgb(0, 124, 189);
+                    width: 121px;
+                    height: 37px;
+                    padding: 0;">Register</button></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center bg-image" style="background-image: url('./src/assets/header-registrasi.png');">
+        <div class="container h-100" style="margin-top: 400px;">
+            <center><h2 class="fw-bold">Registrasi</h2></center>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6"  style="width: 640px; height: 889px;">
+                <div class="card" style="border-radius: 16px; border: none;">
+                    <div class="card-body p-5">
+    
+                    <form>
+    
+                        <div class="form-outline mb-4">
+                        <input type="text" id="form3Example1cg" class="form-control form-control-lg" placeholder="Nama Perusahaan" required/>
+                        </div>
+    
+                        <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3cg" class="form-control form-control-lg" placeholder="Email" required/>
+                        </div>
+    
+                        <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4cg" class="form-control form-control-lg" placeholder="Nomor Telepon" required/>
+                        <p><small style="color: #828282; font-family: Montserrat; font-weight: 400; font-size: 10px;">Isi hanya angka</small></p>
+                        </div>
+    
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Tentang Perusahaan (Max. 200 character)*" required></textarea>
+                        </div>
+    
+                        <div class="row justify-content-center align-items-center">
+                            <div class="ml-2 col-md-5">
+                                <form method="post" id="image-form">
+                                    <input type="file" name="img[]" class="file" accept="image/*" required>
+                                    <div class="card justify-content-center align-items-center" style="height: 200px; width: 199.67px;">
+                                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 40px;" >
+                                            <path d="M19.8336 0C14.8217 0.0605685 10.032 2.08179 6.4878 5.63194C2.94356 9.18209 0.925702 13.9797 0.865234 19C0.925702 24.0203 2.94356 28.8179 6.4878 32.3681C10.032 35.9182 14.8217 37.9394 19.8336 38C24.8456 37.9394 29.6352 35.9182 33.1794 32.3681C36.7237 28.8179 38.7415 24.0203 38.802 19C38.7415 13.9797 36.7237 9.18209 33.1794 5.63194C29.6352 2.08179 24.8456 0.0605685 19.8336 0ZM30.6727 20.3571H21.1885V29.8571H18.4787V20.3571H8.99454V17.6429H18.4787V8.14286H21.1885V17.6429H30.6727V20.3571Z" fill="#1B85E8"/>
+                                        </svg>
+                                        <p class="card-text align-items-end">
+                                            <small class="text-muted">Upload file logo <span style="color: red;">*</span></small>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ml-2 col-md-7">
+                                <p>
+                                    <ol style="font-family: Montserrat; font-weight: 400; font-size: 12px;">
+                                        <li>Format file: .png, .jpg, .jpeg</li>
+                                        <li>Maksimal ukuran file 200KB</li>
+                                        <li>Hindari penggunaan logo berwarna putih</li>
+                                        <li>Minimal lebar 300px</li>
+                                    </ol>
+                                </p>
+                            </div>
+                            <form method="post" id="image-form">
+                                <input type="file" name="img[]" class="file" accept="image/*">
+                                <div class="input-group my-3">
+                                    <input type="text" class="form-control" placeholder="Profil Perusahaan atau Deck (opsional)" id="file" style="width: 280px;">
+                                    <div class="input-group-append">
+                                        <button type="button" class="browse btn btn-primary" style="height: 44px; width: 160px; background-color: #007CBD; font-family: Montserrat; font-weight: 700; font-size: 12px;">Upload File</button>
+                                    </div>
+                                    <p><small style="color: #828282; font-family: Montserrat; font-weight: 400; font-size: 10px;">Format file .pdf , maksimal size 20mb</small></p>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form3Example4cg1" class="form-control form-control-lg" placeholder="Link website" required/>
+                                    <p><small style="color: #828282; font-family: Montserrat; font-weight: 400; font-size: 10px;">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</small></p>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                    <label class="form-check-label" for="exampleCheck1" style="font-family: Montserrat;
+                                    font-size: 12px;
+                                    font-weight: 400;">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                    <center>
+                        <button type="submit" class="btn btn-primary" style="width: 250px; height: 49px; border-radius: 5px; background-color: #007CBD;">Register</button>
+                    </center>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="margin-top: 1200px;">
+        <div class="container-fluid">
+          <div class="row footer-logo">
+            <div class="col-md-12 footer-col">
+                <img src="./src/assets/logo.png" alt="logo-footer">
+            </div>
+            <div class="col-md footer-col"></div>
+          </div>
+          <div class="row second-row">
+            <div class="col-md-9 footer-col">
+              <p style="font-family: Montserrat; weight: 600; size: 14px; color: white;">Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            </div>
+            <div class="col-md-3 footer-col justify-content-end">
+                <p class="text-end">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4691 0.656738L20.968 0.623661C20.9547 0.42309 20.8226 0.249983 20.6327 0.184238C20.4427 0.118493 20.2319 0.172896 20.0974 0.322335L20.4691 0.656738ZM19.5428 4.88374C19.5428 4.6076 19.3189 4.38374 19.0428 4.38374C18.7666 4.38374 18.5428 4.6076 18.5428 4.88374H19.5428ZM10.5 6.15674V6.65674H11V6.15674H10.5ZM1.92637 0.656738L2.39462 0.481414C2.32485 0.295078 2.15124 0.167842 1.95255 0.157424C1.75385 0.147006 1.56789 0.255389 1.47902 0.433408L1.92637 0.656738ZM7.5 13.6567L7.85383 14.01C7.97619 13.8875 8.02642 13.7103 7.98661 13.5418C7.94679 13.3732 7.8226 13.2373 7.65833 13.1825L7.5 13.6567ZM0.5 16.371V15.871C0.279732 15.871 0.0854109 16.0152 0.0215057 16.226C-0.0423996 16.4368 0.0391667 16.6645 0.222353 16.7869L0.5 16.371ZM17.9515 2.04728L17.5806 2.38262L17.7608 2.58187L18.0264 2.54164L17.9515 2.04728ZM19.9702 0.689815C20.0446 1.81173 19.9783 2.52069 19.7838 3.06917C19.5929 3.60721 19.2609 4.04093 18.6968 4.58144L19.3887 5.30346C20.0033 4.71454 20.4605 4.15244 20.7262 3.4035C20.9882 2.66501 21.0458 1.79583 20.968 0.623661L19.9702 0.689815ZM19.5428 5.92458V4.94245H18.5428V5.92458H19.5428ZM19.5428 4.94245V4.88374H18.5428V4.94245H19.5428ZM10 5.15674V6.15674H11V5.15674H10ZM14.8223 0.156738C12.125 0.156738 10 2.50739 10 5.15674H11C11 3.00737 12.7282 1.15674 14.8223 1.15674V0.156738ZM18.5428 5.92458C18.5428 12.2167 13.2624 17.6567 7 17.6567V18.6567C13.8342 18.6567 19.5428 12.7493 19.5428 5.92458H18.5428ZM1.45811 0.832062C2.22305 2.87504 5.10161 6.65674 10.5 6.65674V5.65674C5.62855 5.65674 3.05605 2.24796 2.39462 0.481414L1.45811 0.832062ZM1.47902 0.433408C0.00554863 3.3849 -0.242404 6.25389 0.775073 8.6888C1.79256 11.1237 4.03467 13.027 7.34167 14.131L7.65833 13.1825C4.54668 12.1436 2.57561 10.404 1.69776 8.30324C0.819895 6.20244 0.994452 3.64287 2.37372 0.880069L1.47902 0.433408ZM7.14617 13.3035C6.26646 14.1845 3.76165 15.871 0.5 15.871V16.871C4.08491 16.871 6.83174 15.0337 7.85383 14.01L7.14617 13.3035ZM18.3224 1.71194C17.4594 0.757576 16.2107 0.156738 14.8223 0.156738V1.15674C15.916 1.15674 16.8991 1.62888 17.5806 2.38262L18.3224 1.71194ZM18.0264 2.54164C19.0619 2.38482 20.0775 1.83966 20.8409 0.991142L20.0974 0.322335C19.4829 1.00545 18.6743 1.43211 17.8766 1.55292L18.0264 2.54164ZM0.222353 16.7869C2.47016 18.2877 4.63313 18.6567 7 18.6567V17.6567C4.75713 17.6567 2.80895 17.3115 0.777647 15.9552L0.222353 16.7869Z" fill="#F2F2F2"/>
+                    </svg>
+                        
+                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 6.15674H17M4.5 1.15674H16.5C18.7091 1.15674 20.5 2.9476 20.5 5.15674V17.1567C20.5 19.3659 18.7091 21.1567 16.5 21.1567H4.5C2.29086 21.1567 0.5 19.3659 0.5 17.1567V5.15674C0.5 2.9476 2.29086 1.15674 4.5 1.15674ZM10.5 15.1567C8.29086 15.1567 6.5 13.3659 6.5 11.1567C6.5 8.9476 8.29086 7.15674 10.5 7.15674C12.7091 7.15674 14.5 8.9476 14.5 11.1567C14.5 13.3659 12.7091 15.1567 10.5 15.1567Z" stroke="#F2F2F2"/>
+                    </svg>
+                        
+                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 21.1567C4.97715 21.1567 0.5 16.6796 0.5 11.1567C0.5 5.63389 4.97715 1.15674 10.5 1.15674C16.0228 1.15674 20.5 5.63389 20.5 11.1567C20.5 16.6796 16.0228 21.1567 10.5 21.1567ZM10.5 21.1567V9.15674C10.5 8.05217 11.3954 7.15674 12.5 7.15674H14M7 13.1567H14" stroke="#F2F2F2"/>
+                    </svg>
+                        
+                </p>
+            </div>
+          </div>
+          <section class="section-footer border-top"></section>
+          <div class="row third-row">
+            <div class="col-md-6 footer-col" style="margin-top: 30px; font-family: Montserrat; font-weight: 400; font-size: 10px; color: white;">
+              <p>© 2023 Detikcom. All rights reserved</p>
+            </div>
+            <div class="col-md-6 footer-col"></div>
+          </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
+<style>
+    .navbar-custom {
+        background-color: rgb(0, 124, 189);
+    }
+
+    .d-flex {
+        background-size: cover;
+        height: 400px;
+        position: relative;
+        color: white;
+    }
+
+    .fw-bold {
+        color: white;
+        margin-bottom: 35px;
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 200;
+    }
+
+    .file {
+    visibility: hidden;
+    position: absolute;
+    }
+
+    ::placeholder {
+    color: #777;
+    }
+
+    .gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+
+
+
+    /* Footer */
+    .container-footer {
+        background-color: #007CBD;
+        margin-top: 50px;
+    }
+    
+    .footer-logo img {
+        text-align: left;
+        width: 250px;
+    }
+
+    footer {
+      background-color: #007CBD;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .col-md-3 svg {
+        margin-right: 10px;
+    }
+
+    /* Gaya khusus untuk baris kedua dan ketiga footer */
+    .second-row,
+    .third-row {
+      font-size: 14px;
+      color: #6c757d;
+    }
+
+    /* Gaya khusus untuk kolom dalam footer */
+    .footer-col {
+      margin-bottom: 10px;
+    }
+</style>
